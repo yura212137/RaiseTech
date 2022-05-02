@@ -1,0 +1,37 @@
+// color
+// ──────────────────────────────
+$color-base: #fff;
+$color-whiteHover: #F7F7F7;
+$color-main: #000000;
+$color-black: #131d34;
+$color-back: #d4f1f8;
+$color-blue: #2498b3;
+$color-lightblue: #d4f1f8;
+$color-lightblue2: #e9f8fb;
+$color-greenbtn: #A2D729;
+$color-greenHover: #9AC33D;
+$color-bluebtn: #2BB8D9;
+$color-blueHover: #2498B3;
+$color-gray: #f7f7f7;
+$color-lightgray: #C3C3C3;
+$color-lightgrayHover: #4B4B4B;
+$color-blackMain: #121212;
+
+// breakpoint
+// ──────────────────────────────
+@mixin breakpoint($point) {
+	@if $point == tablet {
+		@media (min-width: 640px) {
+			@content;
+		}
+	}
+	@if $point == pc {
+		@media (min-width: 750px) {
+			@content;
+		}
+	}
+}
+@include breakpoint(tablet) {
+}
+@include breakpoint(pc) {
+}

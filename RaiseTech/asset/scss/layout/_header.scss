@@ -1,0 +1,21 @@
+@use "./../foundation/variable"as v;
+@use "./../foundation/mixin"as m;
+
+.l-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: v.$color-base;
+
+    @include m.lg {
+        height: 70px;
+    }
+
+
+}
